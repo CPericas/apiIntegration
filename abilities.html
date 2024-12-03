@@ -1,0 +1,92 @@
+<!--Pokémon Abilities Page  (Bonus):
+Develop a page that lists different Pokémon abilities and provides detailed descriptions for each ability.
+Utilize JavaScript to fetch ability data from the PokeAPI and present it in a user-friendly format.-->
+<!DOCTYPE HTML>
+<HTML>
+    <head> 
+        <title>Pokemon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pokemon.">
+        <meta name="keyword" content="Service, WebDevelopment, Pericas, CodingTemple">
+        <meta name="author" content="Web Development Mentor">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="abilities.js"></script>
+        <link rel="stylesheet" href="abilitiesStyle.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Poke-Nav</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="homePage.html">Poke-Home</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html">Poke-Search</a>                                        
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="types.html">Poke-Types</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="abilities.html">Poke-Abilities</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section id="abilitiesList" class="abilities-list">
+                <h2>Abilities</h2>
+                <ul id="abilityContainer"></ul>
+            </section>
+
+            <section id="abilityDetails" class="ability-details hidden">
+                <h2 id="abilityName"></h2>
+                <p id="abilityDescription"></p>
+                <button id="backButton">Back to list</button>
+            </section>
+        </main>
+
+        <footer class="footer text-darkgray bg-light py-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <h5>Contact Us</h5>
+                  <ul class="list-unstyled">
+                    <li><strong>Address:</strong> 1234 Broad St, Pallet Town, Kanto</li>
+                    <li><strong>Phone:</strong> (12) 3456-7890</li>
+                    <li><strong>Email:</strong> contact@company.com</li>
+                  </ul>
+                </div>
+          
+                <div class="col-md-4 mb-3">
+                  <h5>Follow Us</h5>
+                  <ul class="list-unstyled">
+                    <li class="mr-3"><a href="#">Facebook</a></li>
+                    <li class="mr-3"><a href="#">Twitter</a></li>
+                    <li class="mr-3"><a href="#">Instagram</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-md-4 mb-3">
+                  <h5>Newsletter</h5>
+                  <form>
+                    <div class="form-group">
+                      <label for="email" class="sr-only">Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </body>
+</HTML>
